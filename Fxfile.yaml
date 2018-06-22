@@ -72,8 +72,6 @@ environments:
 #        header_1: 'cookie: JWTTOKEN=Token' # (e.g. 1)
 #        header_1: 'Authorization: <type> <credentials>' # (e.g. 2)
 
-
-
 # Job profiles
 jobs:
   - name: Stg
