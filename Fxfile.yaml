@@ -33,14 +33,13 @@ imports:
 # App environments
 environments:
   - name: Stg
-    baseUrl: http://stg1.fxlabs.io/api/v1
+    baseUrl: https://master-infusion-test.iqueue.com
     # app access credentials
     auths:
       - name: Default
         # authType: Basic, OAuth_2_0, Token
-        authType: Basic
-        username: username@example.com
-        password: mypassword
+        authType: Token
+        header_1: 'cookie: JWTTOKEN=eyJhbGciOiJIUzI1NiJ9.eyJBY2NvdW50Ijp7InVzZXJOYW1lIjoiYWhtYWQueS5lbWFpbDAxIiwiZmlyc3ROYW1lIjoiQWhtYWQiLCJsYXN0TmFtZSI6Illhc3NpbiIsImVtYWlsSWQiOiJhaG1hZC55K2VtYWlsMDFAbGVhbnRhYXMuY29tIiwic2VydmljZXMiOlt7Im5hbWUiOiJoZXJtZXMiLCJvcmdhbml6YXRpb25zIjpbeyJuYW1lIjoiZGVmYXVsdCIsInJvbGVzIjpbIlJFR1VMQVJfVVNFUiJdfV19LHsibmFtZSI6ImlxdWV1ZSIsIm9yZ2FuaXphdGlvbnMiOlt7Im5hbWUiOiJvcmdfc2Nyb2xsMTAiLCJyb2xlcyI6WyJsdF9hZG1pbl9yb2xlIl19XX1dfSwiVG9rZW5JZCI6ImFlNGYzNmJkLWQ1MTItNGI5Zi1iZGM3LTI3MDBkNjU3NDYzYiIsInN1YiI6ImFobWFkLnkuZW1haWwwMSJ9.9MKDCLKmQSB9AjwZSTW4SlXgFJD6Kn9ZRiHgNjE9YrM'
         # Inject password from FX Vault
         #password: '{{@Vault.FxLabs/Stg-Admin-Pass}}'
 #     - name: QE

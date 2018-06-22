@@ -1,0 +1,25 @@
+---
+# Validates sign-ups.
+
+authors:
+  - Developer1
+
+endpoint: /api/user/profile
+method: GET # GET PUT POST DELETE
+auth: Default
+# auth: Default
+
+
+assertions:
+  - "@StatusCode == 200"
+  #- "@ResponseTime < 2000" # milliseconds
+  #- "@ResponseSize < 1024" # bytes
+
+tags:
+  - V2
+
+policies:
+  logger: DEBUG
+  #repeat: 2
+
+inactive: false
