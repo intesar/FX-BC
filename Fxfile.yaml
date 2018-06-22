@@ -80,7 +80,7 @@ jobs:
     # refers the the env defined above
     environment: Stg
     tags:
-      - V1
+      - V2
     # Bot region
     regions: FXLabs/US_WEST_1
     # 0 15 10 ? * * -> Fire at 10:15am every day
